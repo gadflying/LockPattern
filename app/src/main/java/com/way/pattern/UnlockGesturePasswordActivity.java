@@ -57,7 +57,7 @@ public class UnlockGesturePasswordActivity extends Activity {
 		super.onResume();
 
 		if (!App.getInstance().getLockPatternUtils().savedPatternExists()) {
-			startActivity(new Intent(this, GuideGesturePasswordActivity.class));
+			startActivity(new Intent(this, CreateGesturePasswordActivity.class));
 			finish();
 		}
 	}
@@ -92,7 +92,7 @@ public class UnlockGesturePasswordActivity extends Activity {
 				mLockPatternView
 						.setDisplayMode(LockPatternView.DisplayMode.Correct);
 				Intent intent = new Intent(UnlockGesturePasswordActivity.this,
-						GuideGesturePasswordActivity.class);
+						CreateGesturePasswordActivity.class);
 				// 打开新的Activity
 				startActivity(intent);
 				showToast("解锁成功");

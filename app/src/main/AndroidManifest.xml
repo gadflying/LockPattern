@@ -27,10 +27,6 @@
             android:name="com.way.pattern.CreateGesturePasswordActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.way.pattern.GuideGesturePasswordActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
